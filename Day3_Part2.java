@@ -1,4 +1,4 @@
-public class Example2 {
+public class Day3_Part2 {
 	
 	private static final int INITIAL_SIZE = 5;
 
