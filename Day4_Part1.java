@@ -23,6 +23,7 @@ public class Day4_Part1 {
 				countValid++;
 			}
 		}
+		scanner.close();
 		
 		System.out.println(countValid);
 	}
