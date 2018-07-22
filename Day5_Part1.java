@@ -8,17 +8,14 @@ public class Day5_Part1 {
 		List<Integer> maze = inverseTheMaze();
 		
 		int currentPosition = 0;
-		int moves = maze.get(currentPosition);
+		int offset = maze.get(currentPosition);
 		
-		System.out.println(Arrays.toString(maze.toArray()));
-		while (currentPosition + moves < maze.size())
+		while (currentPosition + offset < maze.size())
 		{
 			steps++;
-			maze.set(currentPosition, moves + 1);
-			currentPosition += moves;
-			moves = maze.get(currentPosition);
-			
-			System.out.println(Arrays.toString(maze.toArray()));
+			maze.set(currentPosition, offset + 1);
+			currentPosition += offset;
+			offset = maze.get(currentPosition);
 		}
 		// one more step ecscaping the maze
 		steps++;
